@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="index.css" type="text/css" rel="stylesheet"/>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+<body>
+     <!-- Tab links -->
+<div style="display : flex; background-color: #e1d641;border-style: solid; justify-content: center;">
+    <h1 >Akhil's Profile</h1>
+</div>
+<div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'home')" id="defaultOpen">Home</button>
+    <button class="tablinks" onclick="openCity(event, 'gallery')">Gallery</button>
+    <button class="tablinks" onclick="openCity(event, 'contact_me')">Contact Me</button>
+    <button class="tablinks" onclick="openCity(event, 'about_me')">About Me</button>
+</div>
+  
+  <!-- Tab content -->
+  <div id="home" class="tabcontent" >
+    <h2>Home</h2>
+    <h3>Projects</h3>
+    <div class="container-project">
+        <div class="card">    
+            <a href="https://github.com/Rahtoken/zetsubou-gacha">
+                <img src="zbgacha.png" class="card-image">
+            </a>
+            <!-- <hr> -->
+            <div style="border-top-style: solid; padding-left: 5px; padding-right: 5px;">
+                <h3 style="margin: 0; margin-top: 2px;">Zetsubou Gacha</h1>
+                <p style="width : 400px">A Full Stack Web Application to Simulate
+                     the hit mobile game Fate Grand Order's summoning system.</p>
+            </div>
+        </div>
+        <div class="card">    
+            <a href="https://github.com/zetsubou24/FuturePredictor">
+                <img src="future.jpeg" class="card-image">
+            </a>
+            <!-- <hr> -->
+            <div style="border-top-style: solid; padding-left: 5px; padding-right: 5px;">
+                <h3 style="margin: 0; margin-top: 2px;">Future Predictor</h1>
+                <p style="width : 400px">A Full Stack Web Application powered by ML which predicts a user's possible future location based on previous trends</p>
+            </div>
+        </div>
+        <div class="card">    
+            <a href="https://github.com/zetsubou24/origin-backend">
+                <img src="origin.png" class="card-image">
+            </a>
+            <!-- <hr> -->
+            <div style="border-top-style: solid; padding-left: 5px; padding-right: 5px;">
+                <h3 style="margin: 0; margin-top: 2px;">Origin Vocabulary App</h1>
+                <p style="width : 400px">A Full Stack Web Application to provide a learning platform for Vocabulary.</p>
+            </div>
+        </div>
+        <div class="card">    
+            <a href="https://github.com/griet2016to2020/Banking_blockchian">
+                <img src="digicoin2.jpeg" class="card-image">
+            </a>
+            <!-- <hr> -->
+            <div style="border-top-style: solid; padding-left: 5px; padding-right: 5px;">
+                <h3 style="margin: 0; margin-top: 2px;">Digicoin</h1>
+                <p style="width : 400px">Simulated a blockchain powered crypto currency using Node js</p>
+            </div>
+            
+        </div>
+        </div>
+  </div>
+  
+  <div id="gallery" class="tabcontent">
+    <h3>Gallery</h3>
+    <p>A humble collection of snaps</p>
+    <div class="row">
+        <div class="column">
+            <img src="pic1.jpg">
+            <img src="pic2.jpg">
+            <img src="pic3.jpg">
+            <img src="pic1.jpg">
+        </div>
+        <div class="column">
+            <img src="pic3.jpg">
+            <img src="pic1.jpg">
+            <img src="pic2.jpg">
+            <img src="pic3.jpg">
+        </div>
+        <div class="column">
+            <img src="pic2.jpg">
+            <img src="pic3.jpg">
+            <img src="pic1.jpg">
+        </div>
+        <div class="column">
+            <img src="pic1.jpg">
+            <img src="pic2.jpg">
+            <img src="pic3.jpg">
+            <img src="pic1.jpg">
+        </div>
+    </div>
+  </div>
+  
+  <div id="contact_me" class="tabcontent">
+    <h3 style="text-align: center;">Contact Me</h3>
+    <p></p>
+    <div class="container">
+        <form action="#">
+      
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      
+          <label for="email">E-mail Address</label>
+          <input type="text" id="email" name="email" placeholder="Your email address..">
+      
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
+            
+          <div style="display: flex; justify-content: center">
+          <input type="submit" value="Submit">
+        </div>
+        </form>
+      </div> 
+  </div> 
+
+  <div id="about_me" class="tabcontent">
+    <h3 >About Me</h3>
+    <p style="height: 51vh;">I'm Akhil, student at GRIET and currently an intern at Zemoso Labs. I am passionate about learning and working with new technologies. My hobbies are playing video games, reading and solving problems.</p>
+</div> 
+  <section id="lab_social_icon_footer">
+    <!-- Include Font Awesome Stylesheet in Header -->
+    <footer class="footer" >
+        <div class="text-center center-block">
+            <a href="https://github.com/zetsubou24"><i id="social-gh" class="fa fa-github-square fa-3x social"></i></a>
+            <a href="#"><i id="social-fb" class="fa fa-linkedin-square fa-3x social"></i></a>
+            <a href="#"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
+        </div>
+    </footer>
+    </section>
+</body>
+<script src="index.js"></script>
+</html> 
